@@ -2,7 +2,7 @@
 
 if ($IsWindows -eq $false) {
     function Set-ConsoleMode {
-        [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions")]
+        [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "")]
         param()
     }
     return
@@ -71,7 +71,7 @@ enum ConsoleModeOutputFlags
 
 function Set-ConsoleMode
 {
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions")]
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "")]
     param(
         [Parameter(ParameterSetName = "ANSI")]
         [switch]
